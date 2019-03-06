@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Department";
+}
+
+<style>
+    .text {
+        padding: 1rem;
+    }
+
+    .foodImg {
+        width: 100%; 
+        height: 100%;
+    }
+</style>
+
+<h1 class="display-4 reddishColor">@ViewData["Title"]</h1>
+
+<!-- <div class="row">
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-8">.col-md-8</div>
+</div> -->
+
+<!-- https://www.c-sharpcorner.com/UploadFile/abhikumarvatsa/various-ways-to-pass-data-from-controller-to-view-in-mvc/
+-->
+<!-- Produce -->
+<div class="row border border-secondary rounded" style = "padding: 1rem 0rem;">
+    <div class="col-lg-4">
+        <img src="/img/departments/Produce-image.jpg" alt="mango" title="Produce" class = "foodImg">
+    </div>
+
+    <div class="col-lg-8 text">
+        <h4 title="Produce" class = "reddishColor">Produce</h4>
+        <p><strong>Produce Palace!</strong>
+        <br>When our customers think <strong>Super King</strong> the first thing that comes to mind is <strong>Produce</strong>.</p>
+        <p>
+            We guarantee fresh produce and the lowest prices every day. 
+            Our produce variety includes strawberries, blueberries, avocados, 
+            the largest variety of eggplant anywhere and even pomegranates.
+        </p>
+    </div>
+</div>
+
+<!-- Meat -->
+<div class="row border border-secondary rounded" style = "padding: 1rem 0rem;">
+    <div class="col-lg-8 text">
+        <h4 title="Meat &amp; Seafood" class = "reddishColor">Meat &amp; Seafood</h4>
+        <p>
+            Our friendly butchers have years of experience and can always meet your needs.
+            If you're on the move, our <strong>meats</strong> are also 
+            individually <strong>packaged</strong> and ready to go.</p>
+            <p>Our meat is delivered daily and always guaranteed fresh or your money back. 
+            If you are looking for a special cut or grade, 
+            feel free to ask us and we can order it for you. 
+            Fresh and premium quality seafood is what Super King takes pride in. 
+            Whether it is cooked or raw shrimp, fresh fillets, whole fish or crab meat, we carry it!
+        </p>
+    </div>
+
+    <div class="col-lg-4">
+        <img src="/img/departments/meat-image.jpg" alt="mango" title="Produce" class = "foodImg">
+    </div>
+</div>

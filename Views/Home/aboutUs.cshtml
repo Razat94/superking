@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+}
+
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+<style>
+    .aboutus-title {
+        letter-spacing: 0;
+        margin: 0 0 2rem;
+        position: relative;
+        text-transform: uppercase;
+        color: #000;
+    }
+    .aboutus-title::after {
+        background: #f02f18 none repeat scroll 0 0;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        left: 0;
+        position: absolute;
+        width: 54px;
+    }
+    .aboutus-text {
+        color: #606060;
+        font-size: 13px;
+        line-height: 22px;
+        margin: 0 0 35px;
+    }
+    .px3 {
+       padding: 2rem;
+    }
+    @@media only screen and (max-width: 992px) {
+        .px3 {
+            padding: 1rem;
+        } 
+    }
+
+</style>
+
+<section class = "px3">
+    <div class="text-center">
+        <h1 class="display-4">About Us</h1>
+    </div>
+
+    <div class="container px3">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <div class="aboutus">
+                    <h4 class="aboutus-title">Mission Statement</h4>
+                    <p class="aboutus-text">
+                        Super King consistently delivers the highest quality of food products, at excellent values in clean stores. 
+                        Our employees are our best partners in this endeavor, making Super King a desirable workplace. 
+                        As our customers reflect the diversity of Southern California, so do our products.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <iframe class="aboutus-banner" height="250" title="Our statements video" src="https://www.youtube.com/embed/m1HjsbapOyg?rel=0" style="border: 0; width: 100%;">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>

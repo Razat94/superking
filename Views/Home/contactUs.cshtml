@@ -1,0 +1,106 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.contactUs.cshtml";
+}
+
+<style>
+    .socialLinkIcon {
+        font-size:2rem; 
+        color: #343a40;
+    }
+
+    .socialLinkIcon:hover {
+        font-size: 2.5rem;
+    }
+</style>
+
+<div id = "myvideo" data-vide-bg="/video/videoplayback.mp4" data-vide-options="posterType: 'none', resizing: true">
+    <partial name="_CookieConsentPartial" />
+    <main role="main" class="pb-3 pt-3">
+        <div class="container">
+
+            <section class="form2 container justify-content-center col-lg-8 col-md-8 col-sm-12">
+
+                <div style = "padding: 3rem 3rem 0rem;" class="align-left card" data-form-type="formoid">
+                    <center style = "padding-bottom: 1rem;">
+                        <h3>
+                            Get In Touch With Us
+                        </h3>
+                        
+                        <div id="socialLinks" class="social-links">
+                            <a href="https://twitter.com/superkingmarket" target="_blank">
+                                <i class="fab fa-twitter-square socialLinkIcon"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/company/super-king-markets" target="_blank" class="linkedin">
+                                <i class="fab fa-linkedin socialLinkIcon"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/superkingmarkets/" target="_blank" class="instagram">
+                                <i class="fab fa-instagram socialLinkIcon"></i>
+                            </a>
+
+                            <a href="https://www.youtube.com/c/SuperKingMarkets" target="_blank" class="youtube">
+                                <i class="fab fa-youtube socialLinkIcon"></i>
+                            </a>
+
+                            <a href="https://www.facebook.com/SuperKingMarkets" target="_blank" class="facebook">
+                                <i class="fab fa-facebook-square socialLinkIcon"></i>
+                            </a>
+                        </div>
+                    </center>
+                    
+                    <form class="mbr-form" action="" method="POST" data-form-title="E-mail Form">
+                        <div class="row row-sm-offset">
+                            <div class="col-md-12 multi-horizontal" data-for="name">
+                                <div class="form-group">
+                                    <h6 class="pb-2 form-title">
+                                        Full Name <span style = "color: red;">*</span>
+                                    </h6>
+                                    <input type="text" class="form-control" name="name" placeholder="Your Name" data-form-field="Name" required="" id="name-form2-2e">
+                                </div>
+                            </div>
+                            <div class="col-md-12 multi-horizontal" data-for="email">
+                                <div class="form-group">
+                                    <h6 class="pb-1 form-title">
+                                        Email Address <span style = "color: red;">*</span>
+                                    </h6>
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email" data-form-field="Email" required="" id="email-form2-2e">
+                                </div>
+                            </div>
+                            <div class="col-md-12 multi-horizontal" data-for="phone">
+                                <div class="form-group">
+                                    <h6 class="pb-1 form-title">
+                                        Phone Number
+                                    </h6>
+                                    <input type="tel" class="form-control" name="phone" placeholder="Your Phone Number" data-form-field="Phone" id="phone-form2-2e">
+                                </div>
+                            </div>
+                            <div class="col-md-12 multi-horizontal" data-for="subject">
+                                <div class="form-group">
+                                    <h6 class="pb-1 form-title">
+                                        Subject
+                                    </h6>
+                                    <input type="tel" class="form-control" name="Subject" placeholder="" data-form-field="" id="">
+                                </div>
+                            </div>
+                            <div class="col-md-12 multi-horizontal" data-for="message">
+                                <div class="form-group">
+                                    <h6 class="pb-1 form-title">
+                                        Message
+                                    </h6>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="input-group-btn">
+                        </span>
+                        
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">
+                            <span style = "color: #f02f18;"> Continue to checkout </span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+</div>
