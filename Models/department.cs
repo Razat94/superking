@@ -20,11 +20,11 @@ namespace departmentPage.Models
             p2 = "";
         }
 
-        public void Produce()
+        public void setProduce()
         {
             title = "Produce";
             subtitle = "Produce Palace!";
-            p1 = "When our customers think <strong>Super King</strong> the first thing that comes to mind is <strong>Produce</strong>.";
+            p1 = "When our customers think @'<strong>Super King</strong>' the first thing that comes to mind is <strong>Produce</strong>.";
             p2 = "We guarantee fresh produce and the lowest prices every day. Our produce variety includes strawberries, blueberries, avocados, the largest variety of eggplant anywhere and even pomegranates.";
         }
 

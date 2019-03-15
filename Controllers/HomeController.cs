@@ -21,7 +21,10 @@ namespace mvcapp.Controllers
 
         public IActionResult Departments()
         {
-            Departm blah = new Departm();
+            Departm Produce = new Departm();
+            Produce.setProduce();
+
+            ViewBag.Produce = Produce;
             return View();
         }
 

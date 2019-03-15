@@ -1,4 +1,10 @@
-﻿@{
+﻿@using departmentPage.Models;
+
+@{
+    Departm p = ViewBag.Produce;
+}
+
+@{
     ViewData["Title"] = "Department";
 }
 
@@ -19,6 +25,28 @@
     <div class="col-md-4">.col-md-4</div>
     <div class="col-md-8">.col-md-8</div>
 </div> -->
+
+<!-- Produce -->
+<div class="row border border-secondary rounded" style = "padding: 1rem 0rem;">
+    <div class="col-lg-4">
+        <img src="/img/departments/Produce-image.jpg" alt="mango" title="Produce" class = "foodImg">
+    </div>
+
+    <div class="col-lg-8 text">
+        <h4 title="Produce" class = "reddishColor"> 
+            @p.title
+        </h4>
+        <p>
+            <strong>@p.subtitle</strong>
+            <br>
+            @p.p1
+        </p>
+        <p>
+            @p.p2
+        </p>
+    </div>
+</div>
+
 
 <!-- https://www.c-sharpcorner.com/UploadFile/abhikumarvatsa/various-ways-to-pass-data-from-controller-to-view-in-mvc/
 -->
