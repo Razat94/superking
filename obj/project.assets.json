@@ -13252,11 +13252,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Razat\\Desktop\\NET\\superking\\mvcapp.csproj",
+      "projectUniqueName": "C:\\Users\\Razat\\Desktop\\Projects\\Github Projects\\superking\\mvcapp.csproj",
       "projectName": "mvcapp",
-      "projectPath": "C:\\Users\\Razat\\Desktop\\NET\\superking\\mvcapp.csproj",
+      "projectPath": "C:\\Users\\Razat\\Desktop\\Projects\\Github Projects\\superking\\mvcapp.csproj",
       "packagesPath": "C:\\Users\\Razat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Razat\\Desktop\\NET\\superking\\obj\\",
+      "outputPath": "C:\\Users\\Razat\\Desktop\\Projects\\Github Projects\\superking\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
