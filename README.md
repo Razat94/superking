@@ -6,7 +6,5 @@ This application was written in .NET Core 3.1. You can download it [here](https:
 
 To run the application, run the command:
 > 'dotnet run' 
+
 > The application will then be hosted on https://localhost:5001. Press "Ctrl+C" to close the application.
-
-
-
