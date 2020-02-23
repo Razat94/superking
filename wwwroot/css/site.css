@@ -55,6 +55,7 @@ body {
 
 .blah {
   color: red;
+  border: 0px;
 }
 
 .reddishColor {

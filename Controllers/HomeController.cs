@@ -13,7 +13,7 @@ namespace mvcapp.Controllers
 {
     public class HomeController : Controller
     {
-        Departm yomama = new Departm();
+         Departm yomama = new Departm();
         public IActionResult Index()
         {
             return View();
