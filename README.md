@@ -1,10 +1,13 @@
-# Super King Markets
-A website dedicated to Super King. Written in asp.net core
+# Super King Markets Example Website
+A website dedicated to SK Markets. Written in Asp.net Core MVC
+
+Please support the official website: https://superkingmarkets.com/
 
 ## How to run the application
-This application was written in .NET Core 3.1. You can download it [here](https://dotnet.microsoft.com/download/dotnet-core/3.1).
+This application was written in .NET Core 3.1. You can download the environment [here](https://dotnet.microsoft.com/download/dotnet-core/3.1).
 
 To run the application, run the command:
 > 'dotnet run' 
 
-> The application will then be hosted on https://localhost:5001. Press "Ctrl+C" to close the application.
+The application will then be hosted on https://localhost:5001. 
+When you're done with the application, press "Ctrl+C" to close the application.

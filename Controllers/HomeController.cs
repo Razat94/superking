@@ -13,7 +13,6 @@ namespace mvcapp.Controllers
 {
     public class HomeController : Controller
     {
-         Departm yomama = new Departm();
         public IActionResult Index()
         {
             return View();
@@ -21,10 +20,11 @@ namespace mvcapp.Controllers
 
         public IActionResult Departments()
         {
-            Departm Produce = new Departm();
-            Produce.setProduce();
+            DepartmentList dpList = new DepartmentList();
+            dpList.populateList();
 
-            ViewBag.Produce = Produce;
+            ViewBag.dpList = dpList;
+            ViewBag.Title = "Department";
             return View();
         }
 
