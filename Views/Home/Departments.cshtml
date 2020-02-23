@@ -1,7 +1,7 @@
 ﻿@using departmentPage.Models;
 
 @{
-    DepartmentList list = ViewBag.dpList;
+    listOfDepartments list = ViewBag.dpList;
 }
 
 <style>
@@ -16,32 +16,32 @@
 </div> -->
 
 <!-- List -->
-@for(var i = 0; i < @list.dList.Count; i++) {
+@for(var i = 0; i < @list.departmentList.Count; i++) {
     <div class="row border border-secondary rounded" style = "padding: 1rem 0rem;">
         @if ( i == 0 || i % 2 == 0 ) {
             <div class="col-lg-4">
-                <img src= @list.dList[i].imgSrc class = "foodImg">
+                <img src= @list.departmentList[i].imgSrc class = "foodImg">
             </div>
         }
 
         <div class="col-lg-8 text">
             <h4 title="" class = "reddishColor"> 
-                @list.dList[i].title
+                @list.departmentList[i].title
             </h4>
             <p>
-                <strong>@list.dList[i].subtitle</strong>
+                <strong>@list.departmentList[i].subtitle</strong>
                 <br>
-                @list.dList[i].p1
+                @list.departmentList[i].p1
             </p>
             <p>
-                @list.dList[i].p2
+                @list.departmentList[i].p2
             </p>
         </div>
 
         <!-- Odd Numbered Images of Index 1, 3, 5 will show here -->
         @if ( i > 0 && i % 2 != 0 ) {
             <div class="col-lg-4">
-                <img src= @list.dList[i].imgSrc class = "foodImg">
+                <img src= @list.departmentList[i].imgSrc class = "foodImg">
             </div>
         }
     </div>

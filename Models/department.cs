@@ -1,7 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Collections.Generic; // Used for List type
+using Newtonsoft.Json; // Newtonsoft JSON package.
+using System.IO; // Used to input/output file contents
+
 
 namespace departmentPage.Models
 {
@@ -88,16 +89,16 @@ namespace departmentPage.Models
 
     } // End of class department
 
-    public class DepartmentList {
-        public List<Department> dList { get; set; }
+    public class listOfDepartments {
+        public List<Department> departmentList { get; set; }
 
-        public DepartmentList() {
-            dList = new List<Department>();
+        public listOfDepartments() {
+            departmentList = new List<Department>();
         }
 
         // addToList is an unused function [You can delete this function if you wish]
         public void addToList ( Department dept) {
-            dList.Add(dept);
+            departmentList.Add(dept);
         }
 
         public void populateList() {
@@ -122,13 +123,23 @@ namespace departmentPage.Models
             Department Frozen = new Department();
             Frozen.setFrozenFoods();
 
-            dList.Add(Produce);
-            dList.Add(Meat);
-            dList.Add(Grocery);
-            dList.Add(ServiceDeli);
-            dList.Add(ServiceBakery);
-            dList.Add(Nuts);
-            dList.Add(Frozen);
+            departmentList.Add(Produce);
+            departmentList.Add(Meat);
+            departmentList.Add(Grocery);
+            departmentList.Add(ServiceDeli);
+            departmentList.Add(ServiceBakery);
+            departmentList.Add(Nuts);
+            departmentList.Add(Frozen);
+        }
+
+        public void populateToJSON() {
+            populateList();
+            string jsonString = JsonConvert.SerializeObject(departmentList, Formatting.Indented);
+            File.WriteAllText(@".\wwwroot\json\department-list.json", jsonString);
+        }
+
+        public void populateDepartmentListFromJSON() {
+            departmentList = JsonConvert.DeserializeObject<List<Department>>(File.ReadAllText(@".\wwwroot\json\department-list.json"));
         }
     } // End of DepartmentList Class
 }

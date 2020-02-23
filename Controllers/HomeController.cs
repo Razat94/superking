@@ -20,8 +20,10 @@ namespace mvcapp.Controllers
 
         public IActionResult Departments()
         {
-            DepartmentList dpList = new DepartmentList();
-            dpList.populateList();
+            listOfDepartments dpList = new listOfDepartments();
+            dpList.populateToJSON();
+            // I created the below function just to see if I can correctly populate a List from a JSON File (which it does).
+            dpList.populateDepartmentListFromJSON(); 
 
             ViewBag.dpList = dpList;
             ViewBag.Title = "Department";
