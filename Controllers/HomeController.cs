@@ -9,6 +9,8 @@ using mvcapp.Models;
 using departmentPage.Models;
 // NOTE ^^ THE ABOVE MODEL IS PHYSICALLY INCLUDED
 
+using contactUs.Models;
+
 namespace mvcapp.Controllers
 {
     public class HomeController : Controller
@@ -32,7 +34,26 @@ namespace mvcapp.Controllers
 
         public IActionResult contactUs()
         {
+            return View(new contactUsModel());
+        }
+
+        [HttpPost]
+        public IActionResult contactUs(contactUsModel model)
+        {
+            string data;
+            data = $"Hello {model.fullName}";
+            data = data + $"\nHere's your data: \n";
+            
+            data = data + $"\nE-mail: {model.email}";
+            data = data + $"\nPhone Number: {model.phone}";
+            data = data + $"\nSubject: {model.subject}";
+            data = data + $"\nMessage: {model.message}";
+            return Content(data);
+            /* 
+            ViewBag.modelData = model;
+            ViewBag.Message = "Success: Value will be inserted into database";
             return View();
+            */
         }
 
         public IActionResult aboutUs()
