@@ -1,7 +1,8 @@
 # Super King Markets Example Website
-A website dedicated to SK Markets. Written in Asp.net Core MVC
+A website dedicated to SK Markets that interacts with JSON and XML files. Written in Asp.net Core MVC.
 
 Please support the official website: https://superkingmarkets.com/
+Additionally, the "Employees" section contains profiles I got from [CSUNS Student Assistant Employee of the Month website](https://www.csun.edu/usu/student-assistant-employee-month).
 
 ## How to run the application
 This application was written in .NET Core 2.2. To download the 3.1 environment, visit [here](https://dotnet.microsoft.com/download/dotnet-core/3.1).

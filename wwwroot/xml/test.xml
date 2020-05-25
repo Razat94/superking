@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfEmployee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Employee>
+    <name>Kevin Penamante</name>
+    <personalQuote>Kevin has been able to prove time and time again that support others in their times of need. Kevin has stepped up as a student supervisor to not only support the Student Building Managers but help revamp and conduct new hire training multiple times.</personalQuote>
+    <description>Kevin has been a reliable asset to the Reservations &amp; Events Services Department by assisting all the different student positions that are in the department with the knowledge they has gained.</description>
+    <imgSrc>https://www.csun.edu/sites/default/files/KevinPenamante.jpg</imgSrc>
+  </Employee>
+  <Employee>
+    <name>Amelia Sherman</name>
+    <personalQuote>I nominate Amelia Sherman to be Student Employee of the Month because she puts her mind and effort to everything that she does and commits too.</personalQuote>
+    <description>Amelia constantly shows passion and excitement in all she does and seeks more opportunities to advance the Oasis Wellness Center for the better of the CSUN community.</description>
+    <imgSrc>https://www.csun.edu/sites/default/files/AmeliaSherman.jpg</imgSrc>
+  </Employee>
+  <Employee>
+    <name>Katie Gumberg</name>
+    <personalQuote>Katie just transitioned from being the Student Events Assistant to the Student Operations Assistant within the Fitness Programs department.</personalQuote>
+    <description>As the events assistant, she took on large programs within the SRC like I Work Out and recruited staff volunteers.</description>
+    <imgSrc>https://www.csun.edu/sites/default/files/Katie_Gumberg.jpg</imgSrc>
+  </Employee>
+</ArrayOfEmployee>

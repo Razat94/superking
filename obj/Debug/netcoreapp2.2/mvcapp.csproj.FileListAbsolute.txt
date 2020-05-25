@@ -96,3 +96,4 @@ C:\Users\Razat\Desktop\Projects\Github Projects\superking\obj\Debug\netcoreapp2.
 C:\Users\Razat\Desktop\Projects\Github Projects\superking\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Razat\Desktop\Projects\Github Projects\superking\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\Razat\Desktop\Projects\Github Projects\superking\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Razat\Desktop\Projects\Github Projects\superking\obj\Debug\netcoreapp2.2\Razor\Views\Home\employee.cshtml.g.cs

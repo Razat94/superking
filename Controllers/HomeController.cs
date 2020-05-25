@@ -8,7 +8,7 @@ using mvcapp.Models;
 
 using departmentPage.Models;
 // NOTE ^^ THE ABOVE MODEL IS PHYSICALLY INCLUDED
-
+using employeePage.Models;
 using contactUs.Models;
 
 namespace mvcapp.Controllers
@@ -23,9 +23,8 @@ namespace mvcapp.Controllers
         public IActionResult Departments()
         {
             listOfDepartments dpList = new listOfDepartments();
-            dpList.populateToJSON();
-            // I created the below function just to see if I can correctly populate a List from a JSON File (which it does).
-            dpList.populateDepartmentListFromJSON(); 
+            // dpList.populateToJSON(); // Write to JSON
+            dpList.populateDepartmentListFromJSON(); // Read from JSON
 
             ViewBag.dpList = dpList;
             ViewBag.Title = "Department";
@@ -58,6 +57,17 @@ namespace mvcapp.Controllers
 
         public IActionResult aboutUs()
         {
+            return View();
+        }
+
+        public IActionResult employee()
+        {
+            EmployeeList employeesOfTheMonth = new EmployeeList();
+            // employeesOfTheMonth.populateToXML(); // Write to XML
+            employeesOfTheMonth.populateFromXML(); // Read from XML
+            
+            ViewBag.employeesOfTheMonth = employeesOfTheMonth;
+            ViewBag.Title = "Employees!";
             return View();
         }
 

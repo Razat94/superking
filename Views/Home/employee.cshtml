@@ -1,0 +1,43 @@
+﻿@using employeePage.Models;
+
+@{
+    ViewData["Title"] = "Employees";
+    EmployeeList list = ViewBag.employeesOfTheMonth;
+}
+
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+<section class = "px3">
+    <div class="text-center">
+        <h1 class="display-4">@ViewData["Title"]</h1>
+    </div>
+
+    <!-- Automatically assumes that parent folder is wwwroot -->
+    <a href = "..\xml\test.xml" style = "display: block; margin: auto; text-align: center;">
+        <button> View XML file here </button>
+    </a> 
+    <div class="container px3">
+        
+            
+            @for(var i = 0; i < @list.employeeList.Count; i++) {
+                <div class="row" style = "margin: 1rem auto;">
+                    <div class="col-lg-8 text"> 
+                        <h4 title="" class = "reddishColor"> 
+                            @list.employeeList[i].name
+                        </h4>
+                        
+                        <p>
+                            <strong>@list.employeeList[i].personalQuote</strong>
+                            <br>
+                            @list.employeeList[i].description
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src= @list.employeeList[i].imgSrc class = "employeeImg" />
+                    </div>
+                </div>
+            }
+
+        
+    </div>
+</section>
